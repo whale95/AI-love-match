@@ -1,15 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
   images: {
     unoptimized: true
   },
-  // 针对 Cloudflare Pages 的特殊配置
-  experimental: {
-    isrMemoryCacheSize: 0,
-  },
-  // 禁用默认的 x-powered-by header
-  poweredByHeader: false,
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 
