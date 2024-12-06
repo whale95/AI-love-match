@@ -8,8 +8,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: 'var(--primary)',
+          dark: 'var(--primary-dark)',
+          light: 'var(--primary-light)',
+        },
+        success: 'var(--success)',
+        warning: 'var(--warning)', 
+        error: 'var(--error)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        text: {
+          primary: 'var(--text-primary)',
+          secondary: 'var(--text-secondary)',
+        },
+        border: 'var(--border)',
+      },
+      animation: {
+        'fade-in': 'fadeIn var(--transition-normal) ease-in',
       },
     },
   },
