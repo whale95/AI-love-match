@@ -26,6 +26,8 @@ module.exports = {
       },
       animation: {
         'fade-in': 'fadeIn var(--transition-normal) ease-in',
+        'fade-in-up': 'fadeInUp var(--transition-normal) ease-in',
+        'progress': 'progress 3s ease-in-out forwards',
       },
     },
   },

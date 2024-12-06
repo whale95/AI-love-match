@@ -1,0 +1,20 @@
+/* 导入所有全局样式 */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* 导入变量和主题 */
+@import './theme/variables.css';
+@import './theme/animations.css';
+
+/* 基础样式 */
+body {
+  color: var(--text-primary);
+  background: var(--background);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+/* 禁用不必要的外部样式请求 */
+:root {
+  --layui-disabled: none;
+} 
