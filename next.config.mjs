@@ -2,7 +2,9 @@
 const nextConfig = {
   output: 'export',
   distDir: 'out',
-  
+  images: {
+    unoptimized: true  // 添加这行,因为静态导出需要
+  },
   async headers() {
     return [
       {
